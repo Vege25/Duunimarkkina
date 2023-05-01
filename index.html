@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job.fi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coustard&family=Libre+Franklin:wght@700&family=Outfit:wght@200&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="indexHeader">
+            <a href="index.html" class="logoHref">
+                <h1 class="logo">Duunimarkkina</h1>
+            </a>
+            <div class="rightMenu">
+                <a href="map.html" class="mapButton">
+                    <img src="images/map_icon.png" alt="mapAvatar">
+                </a>
+                <button class="profileButton" id="profileButton">
+                    <img src="images/avatarplaceholder_leaktest.jpg" alt="profileAvatar" id="profileAvatar">
+                </button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="searchTextParent">
+            <input type="text" class="searchText" placeholder="Etsi töitä...">
+        </div>
+        <div class="buttonParent">
+            <button class="searchButton" id="searchButton">Hae</button>
+        </div>
+    </nav>
+
+    <main class="indexMainParent">
+        <button class="createNewPostButton" id="createNewPostButton">Luo Työpyyntö</button>
+        <div class="indexMain" id="indexMain"></div>
+    </main>
+
+    <script src="firebase.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
